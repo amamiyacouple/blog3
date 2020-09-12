@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `バリキャリ夫婦雨宮のブログ`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `雨宮夫婦`,
+      summary: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信`,
+    siteUrl: `https://amamiyacouple.work/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `amamiya_couple`,
+      url: 'https://twitter.com/amamiya_couple',
     },
   },
   plugins: [
