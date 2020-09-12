@@ -61,9 +61,9 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © 2020 - {new Date().getFullYear()},
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        バリキャリ夫婦雨宮のブログ All rights reserved.
       </footer>
     </div>
   )
