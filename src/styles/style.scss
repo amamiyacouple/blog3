@@ -43,3 +43,28 @@
     padding-left: 10px;
     border-left: 6px solid rgb(8, 216, 243);
   }
+
+  .toc {
+    background-color: #f2f2f2;
+    padding: 10px;
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    &__content {
+      & ul {
+        margin-left: 30px;
+  
+    & li {
+          font-size: 0.9em;
+          margin: 10px 0;
+  
+          & a {
+            box-shadow: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
