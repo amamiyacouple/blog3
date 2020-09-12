@@ -33,3 +33,13 @@
       }
     }
   }
+
+  .gatsby-highlight-code-line {
+    background-color: #444444;
+    display: block;
+    margin-right: -1em;
+    margin-left: -16px;
+    padding-right: 1em;
+    padding-left: 10px;
+    border-left: 6px solid rgb(8, 216, 243);
+  }
