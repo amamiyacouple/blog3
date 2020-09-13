@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 // Add by myself
 import Toc from "../components/toc"
-import Toc from "../components/tag"
+import Tag from "../components/tag"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
