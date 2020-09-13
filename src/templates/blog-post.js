@@ -5,6 +5,9 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+// Add by myself
+import Toc from "../components/toc"
+import Tag from "../components/tag"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -38,6 +41,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
+        <Tag tags={post.frontmatter.tags} />
+        <Toc data={data.markdownRemark.tableOfContents} />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -95,10 +100,12 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }
