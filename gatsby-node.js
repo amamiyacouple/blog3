@@ -25,6 +25,11 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+        tags: allMarkdownRemark(limit: 1000) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
       }
     `
   )
