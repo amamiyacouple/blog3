@@ -7,6 +7,29 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import Toc from "../components/toc"
 
+/*
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      tableOfContents
+      frontmatter {
+        title
+        date(formatString: "YYYY-MM-DD")
+        description
+      }
+    }
+  }
+`
+*/
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -106,25 +129,3 @@ export const pageQuery = graphql`
     }
   }
 `
-/*
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      tableOfContents
-      frontmatter {
-        title
-        date(formatString: "YYYY-MM-DD")
-        description
-      }
-    }
-  }
-`
-*/
