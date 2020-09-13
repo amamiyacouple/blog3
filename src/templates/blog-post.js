@@ -31,7 +31,7 @@ export const pageQuery = graphql`
 */
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
+  const post = data.allMarkdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
