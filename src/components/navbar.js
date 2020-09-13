@@ -11,6 +11,9 @@ const NavBar = () => {
         <li className="navbar__li">
           <Link to="/about">ABOUT</Link>
         </li>
+        <li className="navbar__li">
+          <Link to="/contact">お仕事依頼</Link>
+        </li>
       </ul>
     </nav>
   );
