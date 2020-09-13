@@ -93,6 +93,27 @@ export const pageQuery = graphql`
         title
       }
     }
+    allMarkdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      tableOfContents
+      frontmatter {
+        title
+        date(formatString: "YYYY-MM-DD")
+        description
+      }
+    }
+  }
+`
+/*
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -106,3 +127,4 @@ export const pageQuery = graphql`
     }
   }
 `
+*/
