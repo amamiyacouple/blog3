@@ -8,7 +8,6 @@ import { rhythm, scale } from "../utils/typography"
 // Add by myself
 import Toc from "../components/toc"
 import Tag from "../components/tag"
-//        <Tag tags={post.frontmatter.tags} />
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -42,6 +41,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
+        <Tag tags={post.frontmatter.tags} />
         <Toc data={data.markdownRemark.tableOfContents} />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
