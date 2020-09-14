@@ -2,7 +2,7 @@
 title: 婚活
 date: "2015-05-01T22:12:03.284Z"
 description: 婚活
-slug: 2020-9-13/婚活
+slug: 20200913marrige
 tags: [婚活]
 hero: ./balloons-892806.jpg
 ---

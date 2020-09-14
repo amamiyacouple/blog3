@@ -2,7 +2,7 @@
 title: プログラミング
 date: "2015-05-01T22:12:03.284Z"
 description: プログラミング
-slug: 2020-9-13/プログラミング
+slug: 20200913hello
 tags: [プログラミング]
 hero: ./salty_egg.jpg
 ---
