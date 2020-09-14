@@ -4,6 +4,7 @@ date: "2015-05-01T22:12:03.284Z"
 description: 転職
 slug: 2020-9-13/転職
 tags: [転職]
+hero: ./handshake-3382504.jpg
 ---
 
 Wow! I love blogging so much already.
