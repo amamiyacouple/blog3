@@ -60,11 +60,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-<Share
-title={post.frontmatter.title}
-url={`${siteUrl}${slug}`}
-description={post.excerpt}
-/>
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}${slug}`}
+          description={post.excerpt}
+        />
         <footer>
           <Bio />
         </footer>
@@ -118,6 +118,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        slug
         tags
         hero {
           childImageSharp {
