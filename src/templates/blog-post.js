@@ -57,11 +57,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <Share
-          title={post.frontmatter.title}
-          url={`${siteUrl}${slug}`}
-          description={post.excerpt}
-        />
         <footer>
           <Bio />
         </footer>
