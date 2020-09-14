@@ -8,6 +8,7 @@ import { rhythm, scale } from "../utils/typography"
 // Add by myself
 import Toc from "../components/toc"
 import Tag from "../components/tag"
+import Image from "gatsby-image";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -42,6 +43,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <Tag tags={post.frontmatter.tags} />
+        <Image fluid={data.markdownRemark.frontmatter.hero.childImageSharp.fluid}/>
         <Toc data={data.markdownRemark.tableOfContents} />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -106,6 +108,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        hero {
+          childImageSharp {
+            fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
