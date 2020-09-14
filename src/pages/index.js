@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+// Add by myself
+import Image from "gatsby-image";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -38,6 +40,14 @@ const BlogIndex = ({ data, location }) => {
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
+            <div className="posts__image_container">
+              <Link to={node.frontmatter.slug}>
+                <Image
+                  className="posts__image"
+                  fluid={node.frontmatter.hero.childImageSharp.fluid}
+                />
+              </Link>
+            </div>
             <section>
               <p
                 dangerouslySetInnerHTML={{
@@ -73,6 +83,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 1280) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
