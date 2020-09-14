@@ -11,6 +11,13 @@ import Tag from "../components/tag"
 import Image from "gatsby-image";
 import Share from "../components/share";
 
+/*<Share
+title={post.frontmatter.title}
+url={`${siteUrl}${slug}`}
+description={post.excerpt}
+/>
+*/
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -56,11 +63,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <Share
-          title={post.frontmatter.title}
-          url={`${siteUrl}${slug}`}
-          description={post.excerpt}
-        />
+
         <footer>
           <Bio />
         </footer>
