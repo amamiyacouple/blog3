@@ -9,12 +9,15 @@ import { rhythm, scale } from "../utils/typography"
 import Toc from "../components/toc"
 import Tag from "../components/tag"
 import Image from "gatsby-image";
+import Share from "../components/share";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-
+  const siteUrl = data.site.siteMetadata.siteUrl;
+  const { slug, previous, next } = pageContext;
+  
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -53,6 +56,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           style={{
             marginBottom: rhythm(1),
           }}
+        />
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}${slug}`}
+          description={post.excerpt}
         />
         <footer>
           <Bio />
