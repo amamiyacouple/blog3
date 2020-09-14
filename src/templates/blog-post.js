@@ -62,7 +62,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         />
         <Share
           title={post.frontmatter.title}
-          url={`${siteUrl}${slug}`}
+          url={`${siteUrl}`}
           description={post.excerpt}
         />
         <footer>
@@ -107,8 +107,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteUrl {
-          slug
+        siteUrl
         }
       }
     }
