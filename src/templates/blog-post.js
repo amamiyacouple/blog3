@@ -12,7 +12,11 @@ import Image from "gatsby-image";
 import Share from "../components/share";
 
 /*
-
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}`}
+          description={post.excerpt}
+        />
 */
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -59,11 +63,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           style={{
             marginBottom: rhythm(1),
           }}
-        />
-        <Share
-          title={post.frontmatter.title}
-          url={`${siteUrl}`}
-          description={post.excerpt}
         />
         <footer>
           <Bio />
