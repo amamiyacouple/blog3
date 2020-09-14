@@ -14,6 +14,7 @@ import Share from "../components/share";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const siteUrl = data.site.siteMetadata.siteUrl;
   const { previous, next } = pageContext
   
   return (
@@ -54,6 +55,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           style={{
             marginBottom: rhythm(1),
           }}
+        />
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}${slug}`}
+          description={post.excerpt}
         />
         <footer>
           <Bio />
