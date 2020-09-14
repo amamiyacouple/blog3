@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `バリキャリ夫婦雨宮のブログ`,
     author: {
-      name: `@amamiya_couple`,
-      summary: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信`,
+      name: `Kyle Mathews`,
+      summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信`,
+    description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://amamiyacouple.work/`,
     social: {
-      twitter: `amamiya_couple`,
+      twitter: `kylemathews`,
     },
   },
   plugins: [
