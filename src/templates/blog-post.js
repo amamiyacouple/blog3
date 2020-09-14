@@ -9,12 +9,22 @@ import { rhythm, scale } from "../utils/typography"
 import Toc from "../components/toc"
 import Tag from "../components/tag"
 import Image from "gatsby-image";
+import Share from "../components/share";
+
+/*
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}`}
+          description={post.excerpt}
+        />
+*/
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const siteUrl = data.site.siteMetadata.siteUrl;
   const { previous, next } = pageContext
-
+  
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -107,6 +117,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        slug
         tags
         hero {
           childImageSharp {
