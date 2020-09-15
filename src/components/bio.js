@@ -10,6 +10,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+// add by myself
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -63,7 +66,19 @@ const Bio = () => {
           Follow me on Twitter
         </a>
       </p>
+      <div style={{ position: "relative", marginTop: "10px", }}　>
+        <div style={{ position: "absolute", width: "100%", top: "0", left: "0", }} >
+          <a style={{ boxShadow: "none", }} href="https://twitter.com/amamiya_couple">
+            <FontAwesomeIcon
+              style={{ height: "1.5em", width: "1.5em", marginRight: "5", }}
+              color="#3eaded"
+              icon={faTwitter}
+            />
+          </a>
+        </div>
+      </div>
     </div>
+    
   )
 }
 
