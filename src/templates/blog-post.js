@@ -11,19 +11,11 @@ import Tag from "../components/tag"
 import Image from "gatsby-image";
 import Share from "../components/share";
 
-/*
-        <Share
-          title={post.frontmatter.title}
-          url={`${siteUrl}`}
-          description={post.excerpt}
-        />
-*/
-
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const siteUrl = data.site.siteMetadata.siteUrl;
-  const { previous, next } = pageContext
+  const siteUrl = data.site.siteMetadata.siteUrl
+  const { slug, previous, next } = pageContext
   
   return (
     <Layout location={location} title={siteTitle}>
@@ -63,6 +55,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           style={{
             marginBottom: rhythm(1),
           }}
+        />
+        <Share
+          title={post.frontmatter.title}
+          url={`${siteUrl}${slug}`}
+          description={post.excerpt}
         />
         <footer>
           <Bio />
