@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 // add by myself
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
