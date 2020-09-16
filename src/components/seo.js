@@ -9,8 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+// Add by myself
+import ogp_image from "../images/default_image.jpg";
 
 const SEO = ({ description, lang, meta, title }) => {
+  const siteUrl = site.siteMetadata.siteUrl;
+  const defaultImage = `${siteUrl}${ogp_image}`;
   const { site } = useStaticQuery(
     graphql`
       query {
