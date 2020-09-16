@@ -25,25 +25,13 @@ const SEO = ({ description, lang, meta, title }) => {
             }
           }
         }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-          frontmatter {
-            hero {
-              childImageSharp {
-                fluid(maxWidth: 1280) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const siteUrl = site.siteMetadata.siteUrl
-  const image = markdownRemark.frontmatter.hero.childImageSharp.fluid.src
-  const defaultImage = `${siteUrl}${ogp_image}`
+  const siteUrl = site.siteMetadata.siteUrl;
+  const defaultImage = `${siteUrl}${ogp_image}`;
 
   return (
     <Helmet
@@ -70,8 +58,12 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: defaultImage,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
