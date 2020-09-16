@@ -31,6 +31,8 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl;
+  const hero = post.frontmatter.hero.childImageSharp.fluid.src
+  const image = `${siteUrl}${hero}`
   const defaultImage = `${siteUrl}${ogp_image}`;
 
   return (
