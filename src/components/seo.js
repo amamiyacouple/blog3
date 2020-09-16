@@ -31,8 +31,6 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl;
-  const hero = post.frontmatter.hero.childImageSharp.fluid.src
-  const image = `${siteUrl}${hero}`
   const defaultImage = `${siteUrl}${ogp_image}`;
 
   return (
@@ -60,12 +58,8 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          property: "og:image",
-          content: image || defaultImage,
-        },
-        {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
