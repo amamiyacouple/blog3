@@ -13,8 +13,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import ogp_image from "../images/default_image.jpg";
 
 const SEO = ({ description, lang, meta, title }) => {
-  const siteUrl = site.siteMetadata.siteUrl;
-  const defaultImage = `${siteUrl}${ogp_image}`;
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -32,6 +30,8 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const siteUrl = site.siteMetadata.siteUrl;
+  const defaultImage = `${siteUrl}${ogp_image}`;
 
   return (
     <Helmet
