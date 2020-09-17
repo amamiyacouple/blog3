@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, Link, graphql } from 'gatsby'
-import './style.scss'
 
 const NavBar = () => {
   const {
@@ -25,13 +24,13 @@ const NavBar = () => {
         <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
-                    <a href="/" class="luxbar-brand">バリキャリ夫婦雨宮のブログ</a>
+                    <a href="https://amamiyacouple.work/" class="luxbar-brand">{title}</a>
                     <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
                     id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
                 </li>
-                <li class="luxbar-item"><a href="/">HOME</a></li>
-                <li class="luxbar-item"><a href="/about">ABOUT</a></li>
-                <li class="luxbar-item"><a href="/contact">お仕事依頼</a></li>
+                <li class="luxbar-item"><Link to="/">HOME</Link></li>
+                <li class="luxbar-item"><Link to="/about">ABOUT</Link></li>
+                <li class="luxbar-item"><Link to="/contact">お仕事依頼</Link></li>
             </ul>
         </div>
     </header>
