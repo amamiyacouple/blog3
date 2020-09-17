@@ -25,7 +25,7 @@ const NavBar = () => {
         <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
-                    <a href="#" class="luxbar-brand">LUXBAR</a>
+                    <a href="/" class="luxbar-brand">バリキャリ夫婦雨宮のブログ</a>
                     <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
                     id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
                 </li>
