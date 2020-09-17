@@ -7,6 +7,7 @@ import { rhythm } from "../utils/typography";
 
 // Components
 import { Link, graphql } from "gatsby";
+import "../styles/style.scss"
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext;

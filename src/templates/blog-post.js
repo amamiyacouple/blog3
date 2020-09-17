@@ -10,6 +10,7 @@ import Toc from "../components/toc"
 import Tag from "../components/tag"
 import Image from "gatsby-image";
 import Share from "../components/share";
+import "../styles/style.scss"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
