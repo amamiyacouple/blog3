@@ -20,7 +20,8 @@ const NavBar = () => {
     )
 
   return (
-    <header id="luxbar" class="luxbar-fixed">
+    <nav className="navbar">
+      <header id="luxbar" class="luxbar-fixed">
         <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
         <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
             <ul class="luxbar-navigation">
@@ -34,9 +35,9 @@ const NavBar = () => {
                 <li class="luxbar-item"><Link to="/contact">お仕事依頼</Link></li>
             </ul>
         </div>
-    </header>
-
-    /*    <nav className="navbar">
+      </header>
+    </nav>
+    /*
       <ul className="navbar__ul">
         <li className="navbar__li">
           <Link to="/">HOME</Link>
@@ -48,7 +49,7 @@ const NavBar = () => {
           <Link to="/contact">お仕事依頼</Link>
         </li>
       </ul>
-    </nav>*/
+    */
   );
 };
 
