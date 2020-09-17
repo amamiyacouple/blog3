@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, Link, graphql } from 'gatsby'
+import "./styles/styleMedia.scss"
 
 const NavBar = () => {
   const {
