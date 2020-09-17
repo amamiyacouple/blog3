@@ -9,6 +9,8 @@ import {
   LineIcon,
   LinkedinIcon,
 } from "react-share";
+import "../styles/style.scss"
+
 
 const Share = props => {
   const articleTitle = props.title;
