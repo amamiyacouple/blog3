@@ -1,9 +1,42 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery, Link, graphql } from 'gatsby'
+import './style.scss'
 
 const NavBar = () => {
+  const {
+    site: {
+      siteMetadata: { title },
+    },
+  } = useStaticQuery (
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+    )
+
   return (
-    <nav className="navbar">
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a href="#" class="luxbar-brand">LUXBAR</a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item"><a href="/">HOME</a></li>
+                <li class="luxbar-item"><a href="/about">ABOUT</a></li>
+                <li class="luxbar-item"><a href="/contact">お仕事依頼</a></li>
+            </ul>
+        </div>
+    </header>
+
+    /*    <nav className="navbar">
       <ul className="navbar__ul">
         <li className="navbar__li">
           <Link to="/">HOME</Link>
@@ -15,8 +48,9 @@ const NavBar = () => {
           <Link to="/contact">お仕事依頼</Link>
         </li>
       </ul>
-    </nav>
+    </nav>*/
   );
 };
+
 
 export default NavBar;
