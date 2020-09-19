@@ -62,9 +62,7 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © 2020 - {new Date().getFullYear()},
-        {` `}
-        バリキャリ夫婦雨宮のブログ All rights reserved.
+        © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved.
       </footer>
     </div>
   )
