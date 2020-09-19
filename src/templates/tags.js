@@ -7,6 +7,7 @@ import { rhythm } from "../utils/typography";
 
 // Components
 import { Link, graphql } from "gatsby";
+import Image from "gatsby-image";
 import "../styles/style.scss"
 
 const Tags = ({ pageContext, data, location }) => {
@@ -17,45 +18,53 @@ const Tags = ({ pageContext, data, location }) => {
   const tagHeader = `[${tag}]タグの記事一覧（全${totalCount}件）`;
 
   return (
-    <div>
-      <Layout location={location} author={author}>
-        <SEO
-          title={`Tag: ${tag}`}
-          description={`${tag}タグを含む記事の一覧ページです`}
-        />
-        <Bio />
-        <h2>{tagHeader}</h2>
-        {edges.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
+    <Layout location={location} author={author}>
+      <SEO
+        title={`Tag: ${tag}`}
+        description={`${tag}タグを含む記事の一覧ページです`}
+      />
+      <Bio />
+      <h2>{tagHeader}</h2>
+      {edges.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug;
+        return (
+          <article key={node.fields.slug}>
+            <header>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link
+                  style={{ boxShadow: `none` }}
+                  to={node.fields.slug}
+                  itemProp="url"
                 >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={node.frontmatter.slug}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
+                  <span itemProp="headline">{title}</span>
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+            </header>
+            <div className="posts__image_container">
+              <Link to={node.fields.slug}>
+                <Image
+                  className="posts__image"
+                  fluid={node.frontmatter.hero.childImageSharp.fluid}
                 />
-              </section>
-            </article>
-          );
-        })}
-      </Layout>
-    </div>
+              </Link>
+            </div>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+                itemProp="description"
+              />
+            </section>
+          </article>
+        );
+      })}
+    </Layout>
   );
 };
 
@@ -72,10 +81,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
+      ) {
       totalCount
       edges {
         node {
@@ -83,10 +91,16 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            title
             date(formatString: "MMMM DD, YYYY")
+            title
             description
-            slug
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 1280) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
               <small>{node.frontmatter.date}</small>
             </header>
             <div className="posts__image_container">
-              <Link to={node.frontmatter.slug}>
+              <Link to={node.fields.slug}>
                 <Image
                   className="posts__image"
                   fluid={node.frontmatter.hero.childImageSharp.fluid}
@@ -59,7 +59,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
-      <Bio/>
+    <Bio/>
     </Layout>
   )
 }
@@ -73,7 +73,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      ) {
       edges {
         node {
           excerpt
