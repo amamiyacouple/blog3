@@ -18,53 +18,53 @@ const Tags = ({ pageContext, data, location }) => {
   const tagHeader = `[${tag}]タグの記事一覧（全${totalCount}件）`;
 
   return (
-    <div>
-      <Layout location={location} author={author}>
-        <SEO
-          title={`Tag: ${tag}`}
-          description={`${tag}タグを含む記事の一覧ページです`}
-        />
-        <Bio />
-        <h2>{tagHeader}</h2>
-        {edges.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
+    <Layout location={location} author={author}>
+      <SEO
+        title={`Tag: ${tag}`}
+        description={`${tag}タグを含む記事の一覧ページです`}
+      />
+      <Bio />
+      <h2>{tagHeader}</h2>
+      {edges.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug;
+        return (
+          <article key={node.fields.slug}>
+            <header>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link
+                  style={{ boxShadow: `none` }}
+                  to={node.frontmatter.slug}
+                  itemProp="url"
                 >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={node.frontmatter.slug}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <div className="posts__image_container">
-                <Link to={node.frontmatter.slug}>
-                  <Image
-                    className="posts__image"
-                    fluid={node.frontmatter.hero.childImageSharp.fluid}
-                  />
+                  <span itemProp="headline">{title}</span>
                 </Link>
-              </div>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
+              </h3>
+              <small>{node.frontmatter.date}</small>
+            </header>
+            <div className="posts__image_container">
+              <Link to={node.frontmatter.slug}>
+                <Image
+                  className="posts__image"
+                  fluid={node.frontmatter.hero.childImageSharp.fluid}
                 />
-              </section>
-            </article>
-          );
-        })}
-      </Layout>
-    </div>
+              </Link>
+            </div>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+                itemProp="description"
+              />
+            </section>
+          </article>
+        );
+      })}
+    </Layout>
   );
 };
 

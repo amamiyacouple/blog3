@@ -16,7 +16,6 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio/>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -60,6 +59,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
+    <Bio/>
     </Layout>
   )
 }
