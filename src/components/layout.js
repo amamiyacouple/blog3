@@ -59,7 +59,6 @@ const Layout = ({ location, title, children }) => {
     }}
     >
       <Header/>
-      <main>{children}</main>
       <footer>
         © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved.
       </footer>
@@ -67,5 +66,6 @@ const Layout = ({ location, title, children }) => {
   )
 }
 //<header>{header}</header>
+//<main>{children}</main>
 
 export default Layout
