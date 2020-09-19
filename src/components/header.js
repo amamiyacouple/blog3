@@ -6,8 +6,9 @@ import React from "react"
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Header = ({ siteTitle }) => (
-    <Navbar expand="md" variant="white">
-    <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
+    <header className="bg-dark">
+    <Navbar expand="lg" variant="dark">
+    <Navbar.Brand href="/">バリキャリ夫婦雨宮のブログ</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarResponsive" />
     <Navbar.Collapse id="navbarResponsive">
         <Nav as="ul" className="ml-auto">
@@ -20,6 +21,7 @@ const Header = ({ siteTitle }) => (
         </Nav>
     </Navbar.Collapse>
     </Navbar>
+    </header>
 )
 
 Header.propTypes = {
