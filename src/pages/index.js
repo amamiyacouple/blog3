@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
               <small>{node.frontmatter.date}</small>
             </header>
             <div className="posts__image_container">
-              <Link to={node.frontmatter.slug}>
+              <Link to={node.fields.slug}>
                 <Image
                   className="posts__image"
                   fluid={node.frontmatter.hero.childImageSharp.fluid}
