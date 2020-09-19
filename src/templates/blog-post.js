@@ -19,14 +19,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { slug, previous, next } = pageContext
   const hero = post.frontmatter.hero.childImageSharp.fluid.src
   const image = `${siteUrl}${hero}`
-  
+/*
+  <SEO
+  title={post.frontmatter.title}
+  description={post.frontmatter.description || post.excerpt}
+  image={image}
+/>*/
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-        image={image}
-      />
       <article itemScope itemType="http://schema.org/Article">
         <header>
           <h1
