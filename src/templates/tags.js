@@ -7,6 +7,7 @@ import { rhythm } from "../utils/typography";
 
 // Components
 import { Link, graphql } from "gatsby";
+import Image from "gatsby-image";
 import "../styles/style.scss"
 
 const Tags = ({ pageContext, data, location }) => {
@@ -44,6 +45,14 @@ const Tags = ({ pageContext, data, location }) => {
                 </h3>
                 <small>{node.frontmatter.date}</small>
               </header>
+              <div className="posts__image_container">
+                <Link to={node.frontmatter.slug}>
+                  <Image
+                    className="posts__image"
+                    fluid={node.frontmatter.hero.childImageSharp.fluid}
+                  />
+                </Link>
+              </div>
               <section>
                 <p
                   dangerouslySetInnerHTML={{
@@ -83,10 +92,17 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            title
             date(formatString: "MMMM DD, YYYY")
+            title
             description
             slug
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 1280) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
