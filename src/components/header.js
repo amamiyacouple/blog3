@@ -6,15 +6,13 @@ import { Navbar, Nav } from 'react-bootstrap'
 //import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Header = ({ siteTitle }) => (
-    <Navbar bg="dark" variant="dark" expand="true">
-        <Navbar.Brand href="/">バリキャリ夫婦雨宮のブログ</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarResponsive" />
-        <Navbar.Collapse id="navbarResponsive">
-        <Nav className="mr-auto">
-            <Nav.Link href="/about">プロフィール</Nav.Link>
-            <Nav.Item as="li">
-                <Link to="/contact" className="nav-link" activeClassName="active">お仕事依頼</Link>
-            </Nav.Item>
+    <Navbar bg="dark" expand="lg">
+        <Navbar.Brand href="/">Amamiyablog</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link href="/about">プロフィール</Nav.Link>
+                <Nav.Link href="/contact">お仕事依頼</Nav.Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
