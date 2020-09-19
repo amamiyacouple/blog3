@@ -46,7 +46,7 @@ const Tags = ({ pageContext, data, location }) => {
               <small>{node.frontmatter.date}</small>
             </header>
             <div className="posts__image_container">
-              <Link to={node.frontmatter.slug}>
+              <Link to={node.fields.slug}>
                 <Image
                   className="posts__image"
                   fluid={node.frontmatter.hero.childImageSharp.fluid}
@@ -81,10 +81,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
+      ) {
       totalCount
       edges {
         node {
@@ -95,7 +94,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            slug
             hero {
               childImageSharp {
                 fluid(maxWidth: 1280) {
