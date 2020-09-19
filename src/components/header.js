@@ -10,7 +10,7 @@ const Header = ({}) => (
         <Navbar.Brand as={Link} href="/">
             <img
             alt=""
-            src="profilePic"
+            profilePic
             width="30"
             height="30"
             />
