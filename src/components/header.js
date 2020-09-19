@@ -6,22 +6,20 @@ import React from "react"
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-dark">
-    <Navbar expand="md" variant="white">
+    <Navbar style="background-color: #e3f2fd;" variant="light" expand="lg">
     <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarResponsive" />
-    <Navbar.Collapse id="navbarResponsive">
-        <Nav as="ul" className="ml-auto">
-        <Nav.Item as="li">
-            <Link to="/page-2" className="nav-link" activeClassName="active">Page2</Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-            <Link to="/page-3" className="nav-link" activeClassName="active">Page3</Link>
-        </Nav.Item>
-        </Nav>
-    </Navbar.Collapse>
+        <Navbar.Collapse id="navbarResponsive">
+            <Nav as="ul" className="ml-auto">
+            <NavItem href="../pages/about">
+                <Nav.Link as={Link} activeClassName="active" to="../pages/about">プロフィール</Nav.Link>
+            </NavItem>
+            <NavItem href="../pages/contact">
+                <Nav.Link as={Link} activeClassName="active" to="../pages/contact">お仕事依頼</Nav.Link>
+            </NavItem>
+            </Nav>
+        </Navbar.Collapse>
     </Navbar>
-  </header>
 )
 
 Header.propTypes = {
