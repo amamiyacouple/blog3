@@ -52,23 +52,20 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
+    style={{
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      maxWidth: rhythm(30),
+    }}
     >
       <Header/>
-      <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © 2020 - {new Date().getFullYear()},
-        {` `}
-        バリキャリ夫婦雨宮のブログ All rights reserved.
+        © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved.
       </footer>
     </div>
   )
 }
+//<header>{header}</header>
 
 export default Layout
