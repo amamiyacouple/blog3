@@ -8,7 +8,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 const Header = ({ siteTitle }) => (
     <header className="bg-dark">
         <Container>
-            <Navbar expand="lg" variant="dark">
+            <Navbar expand="md" variant="dark">
                 <Navbar.Brand href="/">バリキャリ夫婦雨宮のブログ</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarResponsive" />
                 <Navbar.Collapse id="navbarResponsive">
