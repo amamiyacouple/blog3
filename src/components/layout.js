@@ -51,7 +51,12 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div>
+    <div
+    style={{
+      marginLeft: `auto`,
+      marginRight: `auto`,
+    }}
+    >
       <Header/>
       <header>{header}</header>
       <main>{children}</main>
