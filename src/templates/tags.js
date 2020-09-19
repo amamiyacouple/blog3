@@ -37,7 +37,7 @@ const Tags = ({ pageContext, data, location }) => {
               >
                 <Link
                   style={{ boxShadow: `none` }}
-                  to={node.frontmatter.slug}
+                  to={node.fields.slug}
                   itemProp="url"
                 >
                   <span itemProp="headline">{title}</span>
