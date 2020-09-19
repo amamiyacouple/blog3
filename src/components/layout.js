@@ -4,6 +4,7 @@ import { rhythm, scale } from "../utils/typography"
 //Add by myself
 //import NavBar from "../components/navbar"
 import Header from "../components/header"
+import "../styles/style.scss"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
