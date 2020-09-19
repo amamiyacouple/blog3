@@ -60,8 +60,8 @@ const Bio = () => {
       <p>
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          Follow me on Twitter
+        <a href={`https://linktr.ee/amamiya_couple2`}>
+          Follow us on Twitter
         </a>
       </p>
     </div>
