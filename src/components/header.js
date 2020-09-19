@@ -6,7 +6,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 //import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Header = ({}) => (
-    <Navbar bg="light" variant="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand as={Link} href="/">Amamiyablog</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
