@@ -3,19 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 // add by myself
 import { Navbar, Nav } from 'react-bootstrap'
-import profilePic from "../../content/assets/profile-pic.jpg"
 
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand as={Link} href="/">
-            <img
-            alt=""
-            profilePic
-            width="30"
-            height="30"
-            />
-            Amamiyablog
-        </Navbar.Brand>
+        <Navbar.Brand as={Link} href="/">Amamiyablog</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
