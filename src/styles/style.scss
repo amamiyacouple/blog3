@@ -1,5 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
+.navbar {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
 /*
 .navbar {
     position: fixed;
