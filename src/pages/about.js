@@ -34,6 +34,11 @@ const Aboutpage = ({ data, location }) => {
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
           </div>
           <div>
+            <a href={`https://www.instagram.com/amamiya_wife/`}>
+              Follow me on Instagram
+            </a>
+          </div>
+          <div>
             <h5>GAFA勤務の妻です。</h5>
           </div>
           <div>
@@ -55,7 +60,7 @@ const Aboutpage = ({ data, location }) => {
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
           </div>
           <div>
-            <h5>時価総額10兆円越え企業勤務の夫です。</h5>
+            <h5>時価総額10兆円越え日系大手企業勤務の夫です。</h5>
           </div>
           <div>
             <h5>早慶卒のエンジニアです。</h5>
