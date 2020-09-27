@@ -20,10 +20,12 @@ const Aboutpage = ({ data, location }) => {
         <SEO title="プロフィール" />
         <Col style={{padding:`0.5rem`,textAlign:'center'}}>
           <h1>書いている夫婦</h1>
-          <Image
-            className="posts__image"
-            fluid={husbandImg}
-          />
+          <div className="posts__image_container">
+            <Image
+              className="posts__image"
+              fluid={husbandImg}
+            />
+          </div>
         </Col>
       </Layout>
     </div>
