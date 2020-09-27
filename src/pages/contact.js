@@ -15,7 +15,7 @@ const Contact = ({ data, location }) => {
                 <Col className="space"></Col>
             </Row>
             <Row>
-            <Col className="title-obi">
+            <Col className="contact">
                 <h1 className="h1-font">お仕事依頼</h1>
                 <p>
                     各種お仕事依頼はこちらのフォームよりお願いいたします。
