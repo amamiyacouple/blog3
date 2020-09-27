@@ -24,6 +24,15 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
+          <div class="twitter">
+            <a 
+              href="https://twitter.com/amamiya_wife?ref_src=twsrc%5Etfw" 
+              class="twitter-follow-button" 
+              data-show-count="true"
+              data-lang="ja">Follow @amamiya_wife
+            </a>
+            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+          </div>
           <div>
             <h5>GAFA勤務の妻です。</h5>
           </div>
@@ -35,6 +44,15 @@ const Aboutpage = ({ data, location }) => {
           </div>
           <div>
             <img src={husbandImg} className='about_profile__icon'/>
+          </div>
+          <div class="twitter">
+            <a 
+              href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
+              class="twitter-follow-button"
+              data-show-count="true"
+              data-lang="ja">Follow @amamiya_couple
+            </a>
+            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
           </div>
           <div>
             <h5>時価総額10兆円越え企業勤務の夫です。</h5>
