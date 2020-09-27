@@ -17,6 +17,11 @@ const Contact = ({ data, location }) => {
             <Row>
             <Col className="title-obi">
                 <h1 className="h1-font">お仕事依頼</h1>
+                <p>
+                    各種お仕事依頼はこちらのフォームよりお願いいたします。
+                <br></br>
+                    お名前・メールアドレス・お仕事依頼内容を記載して送信ボタンをクリックしてください。
+                </p>
             </Col>
             </Row>
             <Row>
