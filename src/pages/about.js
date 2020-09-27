@@ -10,7 +10,7 @@ import "../styles/style.scss"
 import { Col } from "react-bootstrap";
 import husbandImg from "../../content/assets/icon_husband2.jpg"
 import wifeImg from "../../content/assets/icon_wife2.jpg"
-import defaultImage from "../images/default_image.jpg"
+import coupleImage from "../../content/assets/profile-pic.jpg"
 
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -78,6 +78,9 @@ const Aboutpage = ({ data, location }) => {
           </div>
           <div>
             <h5>キャリア/転職/仕事/勉強/婚活術について発信しています。</h5>
+          </div>
+          <div>
+            <img src={coupleImage} className='about_profile__icon'/>
           </div>
           <div>
             <h3>夫婦のVoicy</h3>
