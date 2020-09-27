@@ -87,9 +87,6 @@ const Aboutpage = ({ data, location }) => {
               Follow us on Voicy
             </a>
           </div>
-          <div>
-            <iframe src="https://voicy.jp/embed/channel/1259/97148" width="100%" height="385" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
-          </div>
         </Col>
       </Layout>
     </div>
