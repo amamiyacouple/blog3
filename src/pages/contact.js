@@ -1,13 +1,18 @@
+import { Link, graphql } from "gatsby";
 import React from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const ContactPage = () => (
-  <Layout>
-    <SEO title="お仕事依頼" />
+const Contact = ({ data, location }) => {
+    const siteTitle = data.site.siteMetadata.title
+    const author = data.site.siteMetadata.author.name
+
+    return (
+        <Layout location={location} title={siteTitle} author={author}>
+            <SEO title="お仕事依頼" />
             <Row>
-            <Col className="space"></Col>
+                <Col className="space"></Col>
             </Row>
             <Row>
             <Col className="title-obi">
@@ -15,7 +20,7 @@ const ContactPage = () => (
             </Col>
             </Row>
             <Row>
-            <Col className="space"></Col>
+                <Col className="space"></Col>
             </Row>
             <Container className="" style={{width:`80%`}}>
             <Row>
@@ -42,7 +47,21 @@ const ContactPage = () => (
             <Row>
             <Col className="space"></Col>
             </Row>
-  </Layout>
-);
+        </Layout>
+    )
+}
 
-export default ContactPage;
+export default Contact;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author {
+          name
+        }
+      }
+    }
+  }
+`; 
