@@ -10,7 +10,7 @@ import "../styles/style.scss"
 import { Col } from "react-bootstrap";
 import husbandImg from "../../content/assets/icon_husband2.jpg"
 import wifeImg from "../../content/assets/icon_wife2.jpg"
-import defaultImage from "../images/default_image.jpg"
+import coupleImage from "../../content/assets/profile-pic.jpg"
 
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -24,6 +24,9 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
+          <div>
+            <h3>雨宮妻</h3>
+          </div>
           <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_wife?ref_src=twsrc%5Etfw" 
@@ -32,6 +35,16 @@ const Aboutpage = ({ data, location }) => {
               data-lang="ja">Follow @amamiya_wife
             </a>
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+          </div>
+          <div>
+            <a href={`https://www.instagram.com/amamiya_wife/`}>
+              Follow me on Instagram
+            </a>
+          </div>
+          <div>
+            <a href={`https://linktr.ee/amamiya_wife`}>
+              Other links
+            </a>
           </div>
           <div>
             <h5>GAFA勤務の妻です。</h5>
@@ -45,6 +58,9 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <img src={husbandImg} className='about_profile__icon'/>
           </div>
+          <div>
+            <h3>雨宮夫</h3>
+          </div>
           <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
@@ -55,13 +71,34 @@ const Aboutpage = ({ data, location }) => {
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
           </div>
           <div>
-            <h5>時価総額10兆円越え企業勤務の夫です。</h5>
+            <a href={`https://www.instagram.com/amamiya_husband/`}>
+              Follow me on Instagram
+            </a>
+          </div>
+          <div>
+            <a href={`https://linktr.ee/amamiya_couple`}>
+              Other links
+            </a>
+          </div>
+          <div>
+            <h5>時価総額10兆円越え日系大手企業勤務の夫です。</h5>
           </div>
           <div>
             <h5>早慶卒のエンジニアです。</h5>
           </div>
           <div>
             <h5>キャリア/転職/仕事/勉強/婚活術について発信しています。</h5>
+          </div>
+          <div>
+            <img src={coupleImage} className='about_profile__icon'/>
+          </div>
+          <div>
+            <h3>夫婦のVoicy</h3>
+          </div>
+          <div>
+            <a href={`https://voicy.jp/channel/1259/97148`}>
+              Follow us on Voicy
+            </a>
           </div>
         </Col>
       </Layout>
