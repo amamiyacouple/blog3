@@ -10,6 +10,7 @@ import "../styles/style.scss"
 import { Col } from "react-bootstrap";
 import husbandImg from "../../content/assets/icon_husband2.jpg"
 import wifeImg from "../../content/assets/icon_wife2.jpg"
+import defaultImage from "../images/default_image.jpg"
 
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -23,8 +24,19 @@ const Aboutpage = ({ data, location }) => {
           <div className="posts__image_container">
             <Image
               className="posts__image"
-              husbandImg
+              fluid={husbandImg}              
             />
+            <img src={husbandImg}/>
+            <Image
+              className="posts__image"
+              fluid={wifeImg}              
+            />
+            <img src={wifeImg}/>
+            <Image
+              className="posts__image"
+              fluid={defaultImage}              
+            />
+            <img src={defaultImage}/>
           </div>
         </Col>
       </Layout>
