@@ -16,8 +16,8 @@ const Aboutpage = ({ data, location }) => {
     <div>
       <Layout location={location} title={siteTitle} author={author}>
         <SEO title="プロフィール" />
-        <h1>プロフィール</h1>
-        <Row>
+        <Row style={{padding:`0.5rem`,textAlign:'center'}}>
+          <h1>プロフィール</h1>
           <imag src={husbandImg} style={{maxwith:'120px', maxheight:'120px'}}/>
         </Row>
       </Layout>
