@@ -23,10 +23,27 @@ const Aboutpage = ({ data, location }) => {
           <h1>書いている夫婦</h1>
           <div>
             <img src={wifeImg} className='about_profile__icon'/>
-            雨宮妻
+          </div>
+          <div>
+            <h5>GAFA勤務の妻です。</h5>
+          </div>
+          <div>
+            <h5>東京一工卒/英中トリリンガル(TOEIC970/HSK6)です。</h5>
+          </div>
+          <div>
+            <h5>資産運用/語学/キャリア/転職/婚活術について発信しています。</h5>
           </div>
           <div>
             <img src={husbandImg} className='about_profile__icon'/>
+          </div>
+          <div>
+            <h5>時価総額10兆円越え企業勤務の夫です。</h5>
+          </div>
+          <div>
+            <h5>早慶卒のエンジニアです。</h5>
+          </div>
+          <div>
+            <h5>キャリア/転職/仕事/勉強/婚活術について発信しています。</h5>
           </div>
         </Col>
       </Layout>
