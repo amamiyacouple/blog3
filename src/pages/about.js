@@ -5,9 +5,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 //add by myself
+import Image from "gatsby-image";
+import "../styles/style.scss"
+import { Col } from "react-bootstrap";
 import husbandImg from "../../content/assets/icon_husband2.jpg"
 import wifeImg from "../../content/assets/icon_wife2.jpg"
-import { Col } from "react-bootstrap";
 
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
