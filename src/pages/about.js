@@ -36,7 +36,6 @@ const Aboutpage = ({ data, location }) => {
               className="posts__image"
               fluid={defaultImage}              
             />
-            <img src={defaultImage}/>
           </div>
         </Col>
       </Layout>
