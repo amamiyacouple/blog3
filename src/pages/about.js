@@ -19,23 +19,11 @@ const Aboutpage = ({ data, location }) => {
     <div>
       <Layout location={location} title={siteTitle} author={author}>
         <SEO title="プロフィール" />
-        <Col style={{padding:`0.5rem`,textAlign:'center'}}>
+        <Col className='about_profile'>
           <h1>書いている夫婦</h1>
-          <div className="posts__image_container">
-            <Image
-              className="posts__image"
-              fluid={husbandImg}              
-            />
-            <img src={husbandImg}/>
-            <Image
-              className="posts__image"
-              fluid={wifeImg}              
-            />
+          <div>
+            <img src={husbandImg} className='about_profile__icon'/>
             <img src={wifeImg}/>
-            <Image
-              className="posts__image"
-              fluid={defaultImage}              
-            />
           </div>
         </Col>
       </Layout>

@@ -158,3 +158,12 @@
     margin-right: 10px;
   }
 }
+
+.about_profile {
+  text-align: center;
+  &__icon {
+    position: relative;
+    max-width: '120px';
+    max-height: '120px';
+  }
+}
