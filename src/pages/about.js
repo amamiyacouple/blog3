@@ -23,7 +23,7 @@ const Aboutpage = ({ data, location }) => {
           <div className="posts__image_container">
             <Image
               className="posts__image"
-              fluid={husbandImg}
+              husbandImg
             />
           </div>
         </Col>
