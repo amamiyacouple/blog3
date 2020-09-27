@@ -22,8 +22,11 @@ const Aboutpage = ({ data, location }) => {
         <Col className='about_profile'>
           <h1>書いている夫婦</h1>
           <div>
+            <img src={wifeImg} className='about_profile__icon'/>
+            雨宮妻
+          </div>
+          <div>
             <img src={husbandImg} className='about_profile__icon'/>
-            <img src={wifeImg}/>
           </div>
         </Col>
       </Layout>
