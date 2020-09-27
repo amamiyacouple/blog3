@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 //add by myself
 import husbandImg from "../../content/assets/icon_husband2.jpg"
 import wifeImg from "../../content/assets/icon_wife2.jpg"
-import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -16,10 +16,10 @@ const Aboutpage = ({ data, location }) => {
     <div>
       <Layout location={location} title={siteTitle} author={author}>
         <SEO title="プロフィール" />
-        <Row style={{padding:`0.5rem`,textAlign:'center'}}>
+        <Col style={{padding:`0.5rem`,textAlign:'center'}}>
           <h1>プロフィール</h1>
           <imag src={husbandImg} style={{maxwith:'120px', maxheight:'120px'}}/>
-        </Row>
+        </Col>
       </Layout>
     </div>
   );
