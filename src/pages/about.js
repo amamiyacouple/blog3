@@ -21,8 +21,8 @@ const Aboutpage = ({ data, location }) => {
         <SEO title="プロフィール" />
         <Col className='about_profile'>
           <h1>書いている夫婦</h1>
-          <div>
-            <img src={husbandImg} className='about_profile__icon'/>
+          <div className='about_profile__icon'>
+            <img src={husbandImg}/>
             <img src={wifeImg}/>
           </div>
         </Col>
