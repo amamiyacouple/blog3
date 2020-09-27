@@ -1,134 +1,60 @@
-import React, { useState } from "react";
 import { Link, graphql } from "gatsby";
-
+import React from "react";
+import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-
 const Contact = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const author = data.site.siteMetadata.author.name;
+    const siteTitle = data.site.siteMetadata.title
+    const author = data.site.siteMetadata.author.name
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleChange = event => {
-    switch (event.target.name) {
-      case "name":
-        setName(event.target.value);
-        break;
-      case "email":
-        setEmail(event.target.value);
-        break;
-      case "subject":
-        setSubject(event.target.value);
-        break;
-      case "message":
-        setMessage(event.target.value);
-        break;
-      default:
-        console.log("key not found");
-    }
-  };
-
-  const canSubmit = () => {
-    if (name === "") return true;
-    if (email === "") return true;
-    if (subject === "") return true;
-    if (message === "") return true;
-
-    return false;
-  };
-
-  return (
-    <div>
-      <Layout location={location} title={siteTitle} author={author}>
-        <SEO title="Contact" />
-        <h1>Contact</h1>
-        <p>
-          各種お仕事依頼はこちらのフォームよりお願いいたします。
-          <br></br>
-          お名前・メールアドレス・件名・お仕事依頼内容を記載して送信ボタンをクリックしてください。
-        </p>
-        <div className="contact">
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
-            <div className="contact__area">
-              <TextField
-                id="name"
-                className="contact__field"
-                name="name"
-                label="お名前"
-                type="text"
-                variant="outlined"
-                value={name}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="contact__area">
-              <TextField
-                id="email"
-                className="contact__field"
-                name="email"
-                label="メールアドレス"
-                type="email"
-                variant="outlined"
-                value={email}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="contact__area">
-              <TextField
-                id="subject"
-                className="contact__field"
-                name="subject"
-                label="件名"
-                type="text"
-                variant="outlined"
-                value={subject}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="contact__area">
-              <TextField
-                id="message"
-                className="contact__field"
-                name="message"
-                label="お仕事依頼内容"
-                multiline
-                rows={4}
-                variant="outlined"
-                value={message}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="contact__btn">
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                disabled={canSubmit()}
-              >
-                送信
-              </Button>
-            </div>
-          </form>
-        </div>
-        <Link to="/">← Home</Link>
-      </Layout>
-    </div>
-  );
-};
+    return (
+        <Layout location={location} title={siteTitle} author={author}>
+            <SEO title="お仕事依頼" />
+            <Row>
+                <Col className="space"></Col>
+            </Row>
+            <Row>
+            <Col className="contact">
+                <h1 className="h1-font">お仕事依頼</h1>
+                <p>
+                    各種お仕事依頼はこちらのフォームよりお願いいたします。
+                <br></br>
+                    お名前・メールアドレス・お仕事依頼内容を記載して送信ボタンをクリックしてください。
+                </p>
+            </Col>
+            </Row>
+            <Row>
+                <Col className="space"></Col>
+            </Row>
+            <Container className="" style={{width:`80%`}}>
+            <Row>
+                <Col>
+                <Form method="post" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
+                <Form.Group controlId="formBasicText">
+                    <Form.Control type="text" as="input" placeholder="お名前" name="name" required />
+                </Form.Group>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Control type="email" as="input" placeholder="メールアドレス" name="email" required />
+                </Form.Group>
+                <Form.Group controlId="formTextarea">
+                    <Form.Control as="textarea" placeholder="メッセージ" rows="3" name="message" required />
+                </Form.Group>
+                <Form.Group>
+                    <Form.File id="FormControlFile" name="file" lang="ja" label="ファイル添付" />
+                </Form.Group>
+                    <Button variant="light" type="submit">送信</Button>
+                </Form>
+                </Col>
+            </Row>
+            </Container>
+            <Row>
+            <Col className="space"></Col>
+            </Row>
+        </Layout>
+    )
+}
 
 export default Contact;
 
@@ -143,4 +69,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`; 
