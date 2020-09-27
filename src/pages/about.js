@@ -25,7 +25,7 @@ const Aboutpage = ({ data, location }) => {
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
           <div>
-            <h4>雨宮妻</h4>
+            <h3>雨宮妻</h3>
           </div>
           <div class="twitter">
             <a 
@@ -42,6 +42,11 @@ const Aboutpage = ({ data, location }) => {
             </a>
           </div>
           <div>
+            <a href={`https://linktr.ee/amamiya_wife`}>
+              Other links
+            </a>
+          </div>
+          <div>
             <h5>GAFA勤務の妻です。</h5>
           </div>
           <div>
@@ -54,7 +59,7 @@ const Aboutpage = ({ data, location }) => {
             <img src={husbandImg} className='about_profile__icon'/>
           </div>
           <div>
-            <h4>雨宮夫</h4>
+            <h3>雨宮夫</h3>
           </div>
           <div class="twitter">
             <a 
@@ -68,6 +73,11 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <a href={`https://www.instagram.com/amamiya_husband/`}>
               Follow me on Instagram
+            </a>
+          </div>
+          <div>
+            <a href={`https://linktr.ee/amamiya_couple`}>
+              Other links
             </a>
           </div>
           <div>
