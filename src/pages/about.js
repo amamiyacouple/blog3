@@ -5,8 +5,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 //add by myself
-import husbandImg from "../content/assets/icon_husband2.jpg"
-import wifeImg from "../content/assets/icon_wife2.jpg"
+import husbandImg from "../images/icon_husband2.jpg"
+import wifeImg from "../images/icon_wife2.jpg"
 import { Row } from "react-bootstrap";
 
 const Aboutpage = ({ data, location }) => {
