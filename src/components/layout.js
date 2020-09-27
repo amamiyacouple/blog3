@@ -60,7 +60,7 @@ const Layout = ({ location, title, children }) => {
     >
       <Header/>
       <main>{children}</main>
-      <footer>
+      <footer className='footer'>
         © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved.
       </footer>
     </div>
