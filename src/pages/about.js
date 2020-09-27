@@ -24,6 +24,9 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
+          <div>
+            <h4>雨宮妻</h4>
+          </div>
           <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_wife?ref_src=twsrc%5Etfw" 
@@ -50,6 +53,9 @@ const Aboutpage = ({ data, location }) => {
           <div>
             <img src={husbandImg} className='about_profile__icon'/>
           </div>
+          <div>
+            <h4>雨宮夫</h4>
+          </div>
           <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
@@ -60,6 +66,11 @@ const Aboutpage = ({ data, location }) => {
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
           </div>
           <div>
+            <a href={`https://www.instagram.com/amamiya_husband/`}>
+              Follow me on Instagram
+            </a>
+          </div>
+          <div>
             <h5>時価総額10兆円越え日系大手企業勤務の夫です。</h5>
           </div>
           <div>
@@ -67,6 +78,17 @@ const Aboutpage = ({ data, location }) => {
           </div>
           <div>
             <h5>キャリア/転職/仕事/勉強/婚活術について発信しています。</h5>
+          </div>
+          <div>
+            <h3>夫婦のVoicy</h3>
+          </div>
+          <div>
+            <a href={`https://voicy.jp/channel/1259/97148`}>
+              Follow us on Voicy
+            </a>
+          </div>
+          <div>
+            <iframe src="https://voicy.jp/embed/channel/1259/97148" width="100%" height="385" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
           </div>
         </Col>
       </Layout>
