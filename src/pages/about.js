@@ -4,14 +4,22 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+//add by myself
+import husbandImg from "../content/assets/icon_husband2.jpg"
+import wifeImg from "../content/assets/icon_wife2.jpg"
+import { Row } from "react-bootstrap";
+
 const Aboutpage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const author = data.site.siteMetadata.author.name;
   return (
     <div>
       <Layout location={location} title={siteTitle} author={author}>
-        <SEO title="About" />
-        <h1>About</h1>
+        <SEO title="プロフィール" />
+        <h1>プロフィール</h1>
+        <Row>
+          <imag src={husbandImg} style={{maxwith:'120px', maxheight:'120px'}}/>
+        </Row>
       </Layout>
     </div>
   );
