@@ -11,7 +11,7 @@ const Header = ({}) => (
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="align-items-center">
                 <Nav.Link href="/about">プロフィール</Nav.Link>
                 <Nav.Link href="/contact">お仕事依頼</Nav.Link>
                 <Form inline>
