@@ -3,18 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 // add by myself
 import { Navbar, Nav, Form } from 'react-bootstrap'
-import coupleImage from "../../content/assets/profile-pic.jpg"
 
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand as={Link} href="/">
-          <img
-            alt=""
-            src={coupleImage}
-            width="50"
-            height="50"
-            style={{borderRadius:'100%',verticalAlign='middle'}}
-          />
           パワーカップルの生き方
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
