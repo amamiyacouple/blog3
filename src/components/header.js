@@ -13,7 +13,7 @@ const Header = ({}) => (
             src={coupleImage}
             width="30"
             height="30"
-            style={{borderRadius:'100%'}}
+            style={{borderRadius:'100%',verticalAlign='middle'}}
           />
           パワーカップルの生き方
         </Navbar.Brand>
