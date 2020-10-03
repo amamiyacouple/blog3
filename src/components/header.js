@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 // add by myself
-import { Navbar, Nav, Form } from 'react-bootstrap'
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
