@@ -8,45 +8,7 @@
   a:hover {
     text-decoration: underline;
   }
-  margin-bottom: 10px;
 }
-/*
-.navbar {
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
-  background: white;
-  height: 60px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-  &__ul {
-    float: right;
-    margin-right: 20px;
-  }
-  &__li {
-    display: inline-block;
-    line-height: 60px;
-    margin: 0 5px;
-
-    & a {
-      color: black;
-      padding: 7px 13px;
-      padding-bottom: 1px;
-      transition: all 0.5s ease;
-
-      &:hover {
-        color: red;
-        transition: 0.5s;
-      }
-    }
-  }
-}
-*/
 
 .gatsby-highlight-code-line {
   background-color: #444444;
