@@ -12,12 +12,12 @@ const Header = ({}) => (
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="align-items-center">
                 <Nav.Link href="/about">プロフィール</Nav.Link>
                 <Nav.Link href="/contact">お仕事依頼</Nav.Link>
                 <Form inline>
                   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                  <Button variant="outline-info">検索</Button>
+                  <Button variant="outline-info" className="align-items-center">検索</Button>
                 </Form>
             </Nav>
         </Navbar.Collapse>
