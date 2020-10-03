@@ -16,7 +16,7 @@ const Header = ({}) => (
                 <Nav.Link href="/about">プロフィール</Nav.Link>
                 <Nav.Link href="/contact">お仕事依頼</Nav.Link>
                 <Form inline>
-                  <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                  <FormControl type="text" placeholder="Search" className="align-items-center" />
                   <Button variant="outline-info" className="align-items-center">検索</Button>
                 </Form>
             </Nav>
