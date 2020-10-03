@@ -11,8 +11,8 @@ const Header = ({}) => (
           <img
             alt=""
             src={coupleImage}
-            width="30"
-            height="30"
+            width="50"
+            height="50"
             style={{borderRadius:'100%',verticalAlign='middle'}}
           />
           パワーカップルの生き方
