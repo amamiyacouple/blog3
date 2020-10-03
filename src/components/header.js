@@ -14,12 +14,12 @@ const Header = ({}) => (
             <Nav className="mr-auto">
                 <Nav.Link href="/about">プロフィール</Nav.Link>
                 <Nav.Link href="/contact">お仕事依頼</Nav.Link>
+                <Form inline>
+                  <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                  <Button variant="outline-info">検索</Button>
+                </Form>
             </Nav>
         </Navbar.Collapse>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">検索</Button>
-        </Form>
     </Navbar>
 )
 
