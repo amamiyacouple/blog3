@@ -18,7 +18,7 @@ const Header = ({}) => (
         </Navbar.Collapse>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
+          <Button variant="outline-info">検索</Button>
         </Form>
     </Navbar>
 )
