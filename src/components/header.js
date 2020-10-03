@@ -5,6 +5,13 @@ import React from "react"
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import "../styles/style.scss"
 
+/*
+                <Form inline>
+                  <FormControl type="text" placeholder="Search" className="align-items-center" />
+                  <Button variant="outline-info" className="align-items-center">検索</Button>
+                </Form>
+*/
+
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand as={Link} href="/">
@@ -15,10 +22,6 @@ const Header = ({}) => (
             <Nav className="align-items-center">
                 <Nav.Link href="/about">プロフィール</Nav.Link>
                 <Nav.Link href="/contact">お仕事依頼</Nav.Link>
-                <Form inline>
-                  <FormControl type="text" placeholder="Search" className="align-items-center" />
-                  <Button variant="outline-info" className="align-items-center">検索</Button>
-                </Form>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
