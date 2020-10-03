@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 // add by myself
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import "../styles/style.scss"
 
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
