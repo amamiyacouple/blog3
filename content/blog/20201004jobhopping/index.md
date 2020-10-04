@@ -1,7 +1,7 @@
 ---
 title: 転職
 date: "2020-10-04T22:12:03.284Z"
-description: 転職
+description: リクルートエージェントって本当に転職に有効なの？
 slug: 202001004jobhopping
 tags: [転職]
 hero: ./handshake-3382504.jpg
