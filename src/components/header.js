@@ -15,7 +15,7 @@ import "../styles/style.scss"
 const Header = ({}) => (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand as={Link} href="/">
-          パワーカップルの生き方
+          雨宮夫婦のバリキャリブログ
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

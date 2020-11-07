@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `パワーカップルの生き方`,
+    title: `雨宮夫婦のバリキャリブログ`,
     author: {
       name: `雨宮夫婦`,
       summary: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信.`,
