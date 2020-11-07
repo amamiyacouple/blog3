@@ -1,8 +1,8 @@
 ---
 title: 【おすすめ】転職で大手2社内定に役立ったリクルートエージェント体験談
-date: "2020-10-14T22:12:03.284Z"
+date: "2020-11-06T22:12:03.284Z"
 description: ～転職ノウハウ～
-slug: 20201014jobhopping
+slug: 20201106jobhopping
 tags: [転職ノウハウ]
 hero: ./handshake-3382504.jpg
 ---
