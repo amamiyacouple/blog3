@@ -1,111 +1,73 @@
 ---
-title: 婚活
-date: "2015-05-01T22:12:03.284Z"
-description: 婚活
-slug: 20200913marrige
-tags: [婚活]
+title: 【婚活】ペアーズで理想の相手と出会い4ヶ月でスピード結婚した婚活体験談
+date: "2020-10-15T22:12:03.284Z"
+description: ～婚活ノウハウ～
+slug: 20201015marrige
+tags: [婚活ノウハウ]
 hero: ./balloons-892806.jpg
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+## ペアーズでも理想の相手と結婚できる
 
-## On deer horse aboard tritely yikes and much
+結論から言うと、ペアーズでも理想の相手と結婚できます。
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+実際筆者（日系大手エンジニアの夫）は、GAFA勤務のトリリンガルバリキャリ美女とペアーズで出会い、たった4ヶ月で結婚しました。
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+ただ、戦略無くペアーズを使っても上手く行かないのは事実です。
 
-When she reached the first hills of the **Italic Mountains**, she had a last
-view back on the skyline of her hometown _Bookmarksgrove_, the headline of
-[Alphabet Village](http://google.com) and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.
+そこでこの記事では、私達夫婦の戦略を紹介します。
 
-### Overlaid the jeepers uselessly much excluding
+戦略的にペアーズを使いこなし、是非良い出会いに繋げて下さい。
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+## ペアーズで理想の相手を見つけるために大事なこと
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+大事なポイントは3つあります。
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
+1. 理想の条件を書き出す
+1. プロフィールに拘る
+1. 相手選びでブレない
 
-### According a funnily until pre-set or arrogant well cheerful
+1つ1つ説明します。
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+### 理想の条件を書き出す
 
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
+最も大事なフェーズです。
 
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
+ポイントはこちら。
 
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
+- 自分に正直に書き出す
+- できるだけ詳細に書き出す
+- できるだけ沢山書き出す
+- 内面と外面の両方書き出す
+- 現在について書き出す
+- 将来についても書き出す
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
+自分に正直に書き出す理由は、徹底的に自分の理想を書き
 
-#### Silent delightfully including because before one up barring chameleon
 
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
+## 体験談
 
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+### 妻はなぜ夫をペアーズで選んだのか？
 
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
+プロフの冒頭に「バツイチ」と書いてあったからだそうです。
 
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
+バカ正直っぽくて、いいやつそうだったので、メッセージを返したら、凄いこまめに手紙風のLINEの返信をくれて、絶対いいやつなんだろうなって思ってくれたとのこと。
 
-###### Slapped cozy a that lightheartedly and far
+妻は婚活中の条件を、早慶以上、年収800万円以上、身長180cm以上、器デカい、家事やる、話合う、顔タイプ、細身、コミュ障ぽい、仕事好き、浪費癖無い、お世話好き、笑いのツボ同じ、見るからにドM、未婚、にした結果、全く見つからず、絶望していました。
 
-The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word "and" and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.
+そんな時、私がバカ正直に「バツイチ」と自己紹介の冒頭に書いていたことで、試しに合ってみることにしたそうです。
+
+ありがたいですね！
+
+### 夫はなぜ妻をペアーズで選んだのか？
+
+僕の理想を体現したようなプロフィールだったからです。
+
+離婚で開き直った僕は再婚活条件を、早慶以上、年収同等以上、身長165cm以上、一目惚れレベルの美女、会話弾む、情熱的、正直、仕事ストイック、得意分野が異なる、友情に熱い、国際経験豊か、挫折経験あり、衣食住趣味合う、結論から話す、にしていました。
+
+そんな中、顔がドストライクで、東京一工卒で、バリキャリで、身長165cm以上で、国際色豊かでなことが、プロフからひしひしと伝わってきました。
+
+返信が来た時は飛び上がるほど嬉しかったのを覚えています。
+
+命がけで返信してました。
+
