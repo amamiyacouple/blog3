@@ -2,7 +2,7 @@
 title: 【婚活】ペアーズで理想の相手と出会い4ヶ月でスピード結婚した婚活体験談
 date: "2020-11-07T22:12:03.284Z"
 description: ～婚活ノウハウ～
-slug: 20201107marrige
+slug: marrige
 tags: [婚活ノウハウ]
 hero: ./balloons-892806.jpg
 ---

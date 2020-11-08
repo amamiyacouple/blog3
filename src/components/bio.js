@@ -58,10 +58,14 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://linktr.ee/amamiya_couple2`}>
-          Follow us on Twitter
+        <strong>{author.name}</strong>{'が'}{author.summary}
+        {` Twitterで`}
+        <a href={`https://twitter.com/amamiya_wife`}>
+          妻をフォロー
+        </a>
+        {`,`}
+        <a href={`https://twitter.com/amamiya_couple`}>
+          夫をフォロー
         </a>
       </p>
     </div>

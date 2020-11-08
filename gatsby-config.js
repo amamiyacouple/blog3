@@ -3,9 +3,9 @@ module.exports = {
     title: `雨宮夫婦のバリキャリブログ`,
     author: {
       name: `雨宮夫婦`,
-      summary: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信.`,
+      summary: `パワーカップルのキャリア/婚活/ライフハックなどを発信.`,
     },
-    description: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信`,
+    description: `パワーカップルのキャリア/婚活/ライフハックなどを発信`,
     siteUrl: `https://amamiyacouple.work/`,
     social: {
       twitter: `amamiya_couple`,

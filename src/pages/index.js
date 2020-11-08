@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="パワーカップルの生き方" />
+      <SEO title="雨宮夫婦のバリキャリブログ" />
       <Bio/>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
