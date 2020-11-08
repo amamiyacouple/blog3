@@ -29,7 +29,6 @@ h4 {
   border-bottom: darkgray;
 }
 
-
 li {
   margin-left: 30px;
   margin-right: 30px;
@@ -114,11 +113,13 @@ li {
       box-shadow: none;
     }
   }
+
   &__image_container {
     position: relative;
     overflow: hidden;
     border: 1px solid #eee;
   }
+
   &__image {
     margin-bottom: 5px;
     transition: all ease-in 0.5s;
@@ -134,10 +135,11 @@ li {
       overflow: hidden;
     }
   }
-
+  
   &__desc {
     margin-bottom: 5px;
   }
+  
   &__more {
     &__a {
       display: block;
@@ -154,7 +156,6 @@ li {
 
 .social-links {
   margin-bottom: 40px;
-
   &__icon {
     display: inline;
     margin-right: 10px;

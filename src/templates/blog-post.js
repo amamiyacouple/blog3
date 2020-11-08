@@ -20,7 +20,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const hero = post.frontmatter.hero.childImageSharp.fluid.src
   const image = `${siteUrl}${hero}`
 
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -109,6 +108,9 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         siteUrl
+        author {
+          name
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

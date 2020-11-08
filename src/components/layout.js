@@ -61,7 +61,8 @@ const Layout = ({ location, title, children }) => {
       <Header/>
       <main>{children}</main>
       <footer className='footer'>
-        © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved.
+        © 2020 - {new Date().getFullYear()}, {' '} 雨宮夫婦 All rights reserved. 
+        発言は全て私見でいかなる所属・団体とも無関係
       </footer>
     </div>
   )

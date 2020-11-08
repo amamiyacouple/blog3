@@ -25,7 +25,7 @@ const Aboutpage = ({ data, location }) => {
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
           <div>
-            <h3>雨宮妻</h3>
+            雨宮妻
           </div>
           <div class="twitter">
             <a 
@@ -38,22 +38,22 @@ const Aboutpage = ({ data, location }) => {
           </div>
           <div>
             <a href={`https://www.instagram.com/amamiya_wife/`}>
-              Follow me on Instagram
+              妻のInstagramをフォロー
             </a>
           </div>
           <div>
             <a href={`https://linktr.ee/amamiya_wife`}>
-              Other links
+              その他のリンク
             </a>
           </div>
           <div>
-            <h5>GAFA勤務の妻です。</h5>
+            GAFA営業の妻です。
           </div>
           <div>
-            <h5>東京一工卒/英中トリリンガル(TOEIC970/HSK6)です。</h5>
+            日英中トリリンガルです。
           </div>
           <div>
-            <h5>資産運用/語学/キャリア/転職/婚活術について発信しています。</h5>
+            パワーカップルの資産運用/語学/キャリア/笑える日常を発信しています。
           </div>
           <div>
             <img src={husbandImg} className='about_profile__icon'/>
@@ -72,35 +72,35 @@ const Aboutpage = ({ data, location }) => {
           </div>
           <div>
             <a href={`https://www.instagram.com/amamiya_husband/`}>
-              Follow me on Instagram
+              夫のInstagramをフォロー
             </a>
           </div>
           <div>
             <a href={`https://linktr.ee/amamiya_couple`}>
-              Other links
+              その他のリンク
             </a>
           </div>
           <div>
-            <h5>時価総額10兆円越え日系大手企業勤務の夫です。</h5>
+            日系大手勤務の夫です。
           </div>
           <div>
-            <h5>早慶卒のエンジニアです。</h5>
+            早慶卒のエンジニアです。
           </div>
           <div>
-            <h5>キャリア/転職/仕事/勉強/婚活術について発信しています。</h5>
+            結婚のコツ/キャリア/筋トレ/英語/パワーカップルの笑える日常を発信しています。
           </div>
           <div>
             <img src={coupleImage} className='about_profile__icon'/>
           </div>
           <div>
-            <h3>夫婦のVoicy</h3>
+            <h3>夫婦のVoicyラジオ1位📻</h3>
           </div>
           <div>
-            <a href={`https://voicy.jp/channel/1259/97148`}>
-              Follow us on Voicy
+            <a href={`https://voicy.jp/channel/1259`}>
+              Voicyで雨宮夫婦をフォロー
             </a>
           </div>
-        </Col>
+         </Col>
       </Layout>
     </div>
   );
