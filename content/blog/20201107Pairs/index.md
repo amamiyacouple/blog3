@@ -119,7 +119,10 @@ hero: ./balloons-892806.jpg
 
 他でも使いまわせるからこの機に活用してみましょう。
 
-※Photojoy
+<a href="https://px.a8.net/svt/ejp?a8mat=3BQIZ6+4LIIYA+4HMW+60H7M" rel="nofollow">【Photojoy】マッチングアプリ専門のプロフィール写真撮影サービス</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3BQIZ6+4LIIYA+4HMW+60H7M" alt="">
+
+[![](./Photojoy.jpg)](https://px.a8.net/svt/ejp?a8mat=3BQIZ6+4LIIYA+4HMW+5ZU29)
 
 ②自分という商品を売り込む
 
