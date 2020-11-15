@@ -31,6 +31,9 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-prismjs-title`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -43,18 +46,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: {
-              offsetY: 80,
-              icon: false,
-              maintainCase: true,
-            },
-          },
-          `gatsby-remark-prismjs-title`,
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-responsive-iframe`
         ],
       },
     },
@@ -88,12 +82,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-twitter`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-responsive-iframe`],
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
