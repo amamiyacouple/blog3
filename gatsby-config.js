@@ -31,7 +31,15 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: 80,
+              icon: false,
+              maintainCase: false,
+              removeAccents: false,
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-prismjs-title`,
           {

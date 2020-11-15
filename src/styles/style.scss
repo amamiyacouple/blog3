@@ -2,38 +2,79 @@
 body {
   margin-left: 10px;
   margin-right: 10px;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+p {
+  margin-bottom: 40px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #333;
 }
 
 h1 {
+  font-size: 32px;
+  font-weight: 700;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-weight: 900;
+}
+
+h2::before {
+  width: 6px;
+  background: #0068b7;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: ' ';
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: 28px;
+  padding: 0 24px;
+  position: relative;
+  a {
+    box-shadow: none;
+  }
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+h3::before {
+  width: 17%;
+  height: 3px;
+  background: #5472cd;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: ' ';
 }
 
 h3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 20px;
   font-weight: 700;
+  padding: 13px 0 12px;
+  margin: 0 0 30px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  border-left: 0;
+  border-bottom:3px solid #cce4ff;
+  position: relative;
+  a {
+    box-shadow: none;
+  }
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; 
 }
 
-h4 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: 600;
-  border-bottom: darkgray;
-}
-
+/*
 li {
   margin-left: 30px;
   margin-right: 30px;
   font-weight: bold;
 }
+*/
 
 .navbar {
   a {
@@ -60,24 +101,36 @@ li {
 }
 
 .toc {
-  background-color: #f2f2f2;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
   padding: 10px;
-
+  margin: 20px 0 20px 0;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; 
   &__title {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 20px;  
+    text-align: center;
+    text-decoration: underline;
   }
   &__content {
     & ul {
-      margin-left: 30px;
-
-  & li {
-        font-size: 0.9em;
-        margin: 10px 0;
-
+      list-style: none;
+      & li {
         & a {
           box-shadow: none;
           color: black;
+          font-size: 16px;
+          font-weight: 700;
+        }
+        & ul {
+          list-style: none;
+          & li {
+            & a {
+              box-shadow: none;
+              color: black;
+              font-size: 14px;
+              font-weight: 400;
+            }    
+          }
         }
       }
     }
