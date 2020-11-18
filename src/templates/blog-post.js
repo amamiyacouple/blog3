@@ -10,6 +10,7 @@ import Toc from "../components/toc"
 import Tag from "../components/tag"
 import Image from "gatsby-image";
 import Share from "../components/share";
+import Iframely from "../components/iframelry";
 import "../styles/style.scss"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -51,6 +52,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <Tag tags={post.frontmatter.tags} />
         <Image fluid={data.markdownRemark.frontmatter.hero.childImageSharp.fluid}/>
         <Toc data={data.markdownRemark.tableOfContents} />
+        <Iframely/>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
