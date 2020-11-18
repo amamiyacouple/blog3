@@ -25,7 +25,7 @@ const Aboutpage = ({ data, location }) => {
             <img src={wifeImg} className='about_profile__icon'/>
           </div>
           <div>
-            雨宮妻
+            <h3>雨宮妻</h3>
           </div>
           <div class="twitter">
             <a 

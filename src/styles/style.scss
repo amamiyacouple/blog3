@@ -68,13 +68,10 @@ h3 {
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; 
 }
 
-/*
 li {
+  margin: 20px;
   margin-left: 30px;
-  margin-right: 30px;
-  font-weight: bold;
 }
-*/
 
 .navbar {
   a {
@@ -115,6 +112,7 @@ li {
     & ul {
       list-style: none;
       & li {
+        margin: 10px;
         & a {
           box-shadow: none;
           color: black;
@@ -124,6 +122,7 @@ li {
         & ul {
           list-style: none;
           & li {
+            margin: 10px;
             & a {
               box-shadow: none;
               color: black;
